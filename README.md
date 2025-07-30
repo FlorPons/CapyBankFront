@@ -1,5 +1,5 @@
-# 🏦 CapyBack - MVP
-
+# 🏦 CapyBack - Frontend
+Versión frontend de la aplicación sin backend
 
 <p aling="center">
 <img src="logo.png" height="400" alt="Logo"/>
