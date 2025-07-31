@@ -45,7 +45,7 @@ const AsideBar = () => {
             operation_type_id: 1,
             user_id: user!.id,
             is_income: false,
-            sender_account_id: user!.sender_account_id,
+            sender_account_id: user?.sender_account_id?? 0,
         };
         try {
             await transfer(complete_transaction);
@@ -96,7 +96,7 @@ const AsideBar = () => {
                         className="text-secondary"
                     />
                     <Link to="profile/">  
-                    <Avatar label={user?.name.charAt(0)} shape="circle" style={{ backgroundColor: 'var(--color-secondary)', color: '#ffffff' }}/>  
+                    <Avatar label={user?.name?.charAt(0)?? ""} shape="circle" style={{ backgroundColor: 'var(--color-secondary)', color: '#ffffff' }}/>  
                     </Link>
                 </div>
             </div>

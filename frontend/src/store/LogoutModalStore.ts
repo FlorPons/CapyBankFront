@@ -1,4 +1,3 @@
-// store/LogoutModalStore.ts
 import { create } from "zustand";
 
 interface ModalState {
@@ -12,4 +11,3 @@ export const useLogoutModalStore = create<ModalState>((set) => ({
   openModal: () => set({ isOpen: true }),
   closeModal: () => set({ isOpen: false }),
 }));
- 

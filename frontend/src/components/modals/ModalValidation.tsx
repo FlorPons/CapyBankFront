@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';  
 import { useNavigate } from 'react-router-dom'; 
-import Capymonoculus from 'frontend/src/svgs/Capymonoculus.svg';  
+import Capymonoculus from '../../svgs/Capymonoculus.svg';  
 
 interface ModalValidationProps {  
     isOpen: boolean;  
@@ -76,7 +76,7 @@ const [errorMessage, setErrorMessage] = useState('');
     };  
 
     return (  
- <div className="fixed inset-0 flex items-center justify-center bg-beige backdrop-blur py-4 sm:py-10 z-50"> 
+<div className="fixed inset-0 flex items-center justify-center bg-beige backdrop-blur py-4 sm:py-10 z-50"> 
             <div className="bg-gradient-to-b rounded-lg shadow-lg text-center w-full h-full  flex flex-col justify-center mx-4 sm:mx-auto max-w-screen-sm sm:max-w-md md:max-w-lg lg:max-w-xl">  
 
                 {showContent ? (  

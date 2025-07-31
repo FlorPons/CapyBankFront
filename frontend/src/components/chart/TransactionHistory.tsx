@@ -1,7 +1,6 @@
 import React, { useState } from 'react';  
 import { Button } from 'primereact/button';  
-import { DataTable } from 'primereact/datatable';   
-//import { useQuery } from '@tanstack/react-query';   
+import { DataTable } from 'primereact/datatable';      
 import { Column } from 'primereact/column'; 
 import { IconTrendingUp, IconCashBanknote, IconShoppingBag, IconTrendingDown, IconToolsKitchen3, IconShirtSport, IconBusStop, IconMasksTheater, IconHeartbeat, IconProps } from '@tabler/icons-react';  
 import { formatDateTime } from '../../utils/date';  
@@ -43,15 +42,6 @@ const categoryStyles: { [key: string]: CategoryStyle } = {
     'Sueldo': { icon: IconCashBanknote, color: '#FF6B6B', labelColor: '#abebc6' },  
     'otros': { icon: IconShoppingBag, color: '#FF6B6B', labelColor: '#c6fefc' },  
 }; 
-
-// Obtener las transacciones desde el backend  
-//const fetchTransactions = async (): Promise<Transaction[]> => {  
-//    const response = await fetch('http://localhost:3000/api/transaction');  
-//    if (!response.ok) {  
-//        throw new Error('Error al recuperar las transacciones');  
-//    }  
-//    return response.json();  
-//};  
 
 const TransactionHistory: React.FC = () => {
     const [selectedMonth, setSelectedMonth] = useState<Date | null>(null);

@@ -1,4 +1,3 @@
-// --- MODO DEMO ---
 import { TransferCash, TransferCashResponse } from "../types/CashMoves.types";
 import { Transaction } from "../types/Transaction.types";
 

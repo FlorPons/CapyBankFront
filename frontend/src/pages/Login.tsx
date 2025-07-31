@@ -1,17 +1,21 @@
 import React, { useState } from "react";
 import { useForm, Controller } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import RightLogin from "../components/login/RightLogin";
 import { FormDataLogin, loginSchema } from "../schemas/login.schema";
-import Silueta from "frontend/src/svgs/silueta.png";
+import Silueta from ".././svgs/silueta.png";
 import { InputText } from "primereact/inputtext";
 import { Password } from "primereact/password";
+import { useAuthStore } from "../store/AuthStore";
 
 const Login: React.FC = () => {
     const [showErrors, setShowErrors] = useState(false);
     const [loginError, setLoginError] = useState("");
+    const setUser = useAuthStore((s) => s.setUser);
+    const navigate = useNavigate();
+
     const {
         handleSubmit,
         register,
@@ -19,27 +23,34 @@ const Login: React.FC = () => {
         formState: { errors }
     } = useForm<FormDataLogin>({
         resolver: zodResolver(loginSchema),
-        mode: "onSubmit"
+        mode: "onSubmit",
+        defaultValues: { email: "", password: "" }  
     });
 
     const onSubmit = (data: FormDataLogin) => {
         setShowErrors(true);
+
         // Login demo: busca usuario en localStorage
+
         const userStr = localStorage.getItem("demoUser");
         if (userStr) {
             const user = JSON.parse(userStr);
             if (data.email === user.email && data.password === user.password) {
                 setLoginError("");
-                window.location.href = "/dashboard";
+                setUser(user);
+                navigate("/dashboard");
                 return;
             }
         }
         // Fallback demo fijo
         if (data.email === "demo@capybank.com" && data.password === "capy123") {
             setLoginError("");
-            window.location.href = "/dashboard";
+            setUser({ id: 0, email: data.email });
+            navigate("/dashboard");
         } else {
-            setLoginError("Usuario o contraseña incorrectos. Prueba con tu registro demo@capybank.com / capy123");
+            setLoginError(
+                "Usuario o contraseña incorrectos. Prueba con demo@capybank.com / password capy123"
+            );
         }
     };
 
@@ -133,7 +144,7 @@ const Login: React.FC = () => {
                 </form>
             </div>
 
-            {/* Componente de la derecha (fondo azul) */}
+            {/* Componente de la derecha */}
             <div className="hidden md:flex md:w-6/12 bg-primary items-center justify-center">
                 <RightLogin />
             </div>

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Chart } from "primereact/chart";
-import { ChartData, ChartOptions } from "chart.js"; // PrimeReact usa Chart.js internamente
+import { ChartData, ChartOptions } from "chart.js"; 
 
 interface MonthlyFinancialData {
     ingresos: number[];

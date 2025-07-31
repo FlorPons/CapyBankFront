@@ -7,11 +7,10 @@ import { YouTube } from "../svg/YouTube";
 export function Footer ({ className }: { className?: string }) {
   return (
     <footer className={`bg-[#262626] w-full mt-auto text-neutral-400 relative px-4 md:px-10 py-5 h-auto md:h-80 text-sm flex flex-col md:flex-row justify-between max-w-[2040px] mx-auto ${className}`}>
-      {/* Aquí uso flex-col en móviles y flex-row en pantallas medianas (md) */}
       
       {/* Primera parte: Servicios y Sobre nosotros */}
       <div className="flex flex-col md:flex-row gap-8 md:gap-25 h-auto md:h-full mb-8 md:mb-0">
-        {/* Apartar estilos para que en móvil sea en columna, en pantalla grande en fila */}
+      
         <div className="flex flex-col h-full gap-4 min-w-[200px]">
           <h3 className="uppercase text-xs">Servicios</h3>
           <ul className="flex flex-col gap-1 list-disc list-inside">

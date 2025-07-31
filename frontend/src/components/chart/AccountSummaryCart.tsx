@@ -113,7 +113,7 @@ const AccountSummaryChart: React.FC = () => {
                 type="doughnut"  
                 data={data}  
                 options={options}  
-                className="w-full h-full"  // restaurar tamaño original
+                className="w-full h-full"  
             />  
 
             {/* Leyenda personalizada con círculos */}  

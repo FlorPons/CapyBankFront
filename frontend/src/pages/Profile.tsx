@@ -54,11 +54,11 @@ const Profile: React.FC = () => {
   return (
     <div className="relative min-h-screen w-full overflow-hidden">
       <Toast ref={toast} />
-      {/* Fondo dividido */}
+
+      {/* Fondo */}
       <div className="absolute top-0 left-0 w-1/2 h-full bg-primary pointer-events-none" />
       <div className="absolute top-0 right-0 w-1/2 h-full bg-secondary pointer-events-none" />
 
-      {/* Imagen local centrada */}
       <div className="absolute top-6 left-1/2 transform -translate-x-1/2 z-10">
         <img
           src={capybaraImage}
@@ -82,7 +82,7 @@ const Profile: React.FC = () => {
   type="button"
   onClick={() => {
     const datos = getValues();
-    console.log("Valores actuales", datos); // consola para debug
+    console.log("Valores actuales", datos); 
     updateUserProfile(datos);
     toast.current?.show({
       severity: "success",

@@ -1,6 +1,6 @@
 import { UserProfile } from '../schemas/user.schema';
 
-// --- MODO DEMO ---
+
 // Devuelve un perfil de usuario simulado
 export const getUserProfile = async (): Promise<UserProfile> => {
 
@@ -15,7 +15,7 @@ export const getUserProfile = async (): Promise<UserProfile> => {
       phone: user.phone
     };
   }
-  // ...mock por defecto...
+  // mock 
   return {
     name: "Demo",
     last_name: "User",
@@ -25,9 +25,8 @@ export const getUserProfile = async (): Promise<UserProfile> => {
   };
 };
 
-// Simula la actualización del perfil (no hace nada)
 export const updateUserProfile = async (data: UserProfile): Promise<void> => {
-  // Actualiza el usuario en localStorage si existe
+  // Actualiza el usuario en localStorage 
   const userStr = localStorage.getItem("demoUser");
   if (userStr) {
     const user = JSON.parse(userStr);

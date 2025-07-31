@@ -1,8 +1,5 @@
-// Esquema de validación deshabilitado para modo demo.
-
 import { z } from 'zod'; 
 
-//Definición del esquema de validación para el formulario de registro usando Zod
 export const registerSchema = z.object({
     name: z.string().min(1, { message: "El nombre es obligatorio" }),
     last_name: z.string().min(1, { message: "El apellido es obligatorio" }),

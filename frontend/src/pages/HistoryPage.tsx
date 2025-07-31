@@ -1,7 +1,6 @@
 import React from 'react';
 import TransactionHistory from '../components/chart/TransactionHistory';
 import AccountSummaryChart from '../components/chart/AccountSummaryCart';
-//import { Transaction } from '../types/Transaction.types';
 import NavbarLeft from '../components/Common/NavbarLeft';
 import AsideBar from '../components/Aside/AsideBar';
 

@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { useForm, FieldErrors } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useNavigate } from "react-router-dom";
+import { registerSchema, FormDataRegister } from "../schemas/register.schema";
+
 import ModalValidation from "../components/modals/ModalValidation";
 import RightSide from "../components/register/RightSide";
 import Silueta from "frontend/src/svgs/silueta.png";
@@ -9,7 +11,6 @@ import PersonalSection from "../components/register/PersonalSection";
 import NacionalitySection from "../components/register/NacionalitySection";
 import PrivateDataSection from "../components/register/PrivateDataSection";
 import FooterForm from "../components/register/FooterForm";
-import { registerSchema, FormDataRegister } from "../schemas/register.schema";
 
 const Register: React.FC = () => {
     const [isModalOpen, setModalOpen] = useState(false);

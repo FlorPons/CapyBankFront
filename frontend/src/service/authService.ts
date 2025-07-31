@@ -1,7 +1,5 @@
 import { LoginCredentials, RegisterUser, LoginResponse } from '../types/User.types';
 
-// --- MODO DEMO ---
-
 // Registro simulado con parámetro data
 export const register = async (data: RegisterUser): Promise<{ message: string }> => {
   console.log("Datos recibidos en registro (demo):", data);

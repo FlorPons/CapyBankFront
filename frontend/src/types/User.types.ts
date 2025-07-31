@@ -18,13 +18,14 @@ export interface LoginResponse {
     user: UserLogged;
 }
 
-export interface UserLogged{
+export interface UserLogged {
     id: number;
-    name: string;
-    last_name: string;
-    sender_account_id: number;
-    account_number: number;
-    balanceTotal: number;
+    email: string;
+    name?: string;
+    last_name?: string;
+    sender_account_id?: number;
+    account_number?: number;
+    balanceTotal?: number;
 }
 
 export type RegisterUser = Omit<User, 'id'>;

@@ -15,7 +15,7 @@ export function Navbar() {
         <h1 className="text-2xl font-semibold ml-2">{nameLogo}</h1>
       </NavLink>
 
-      {/* Enlaces principales - visible en pantallas grandes */}
+      {/* Enlaces principales*/}
       <div className="hidden md:flex">
         <ul className="flex gap-10 text-xl items-center justify-center">
           <li>
@@ -37,7 +37,6 @@ export function Navbar() {
         </ul>
       </div>
 
-      {/* Acciones en pc */}
       <div className="hidden md:flex gap-4 items-center justify-center text-xl">
         <NavLink to={ROUTES.REGISTER}>Registrate</NavLink>
         <NavLink

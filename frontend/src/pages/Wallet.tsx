@@ -43,7 +43,7 @@ const Wallet: React.FC = () => {
     if (!isNaN(monto) && monto > 0 && monto <= saldoActual) {
       setTimeout(() => {
       setSaldoActual(saldoActual - monto);
-      setShowModal(true); // Mostrar modal después de actualizar saldo
+      setShowModal(true); // modal después de actualizar saldo
     }, 2000);
     }
 
@@ -53,7 +53,7 @@ const Wallet: React.FC = () => {
       operation_type_id: 1,
       user_id: user!.id,
       is_income: false,
-      sender_account_id: user!.sender_account_id,
+      sender_account_id: user?.sender_account_id?? 0,
     };
 
     try {
@@ -97,7 +97,7 @@ const Wallet: React.FC = () => {
             <InputText placeholder="Buscar" className="h-8 w-1/2 text-secondary border-secondary border-1" />
             <Bell viewBox="0 0 24 24" width={24} height={24} className="text-secondary" />
             <Link to="/profile">
-              <Avatar label={user?.name.charAt(0)} shape="circle" style={{ backgroundColor: 'var(--color-secondary)', color: '#ffffff' }} />
+              <Avatar label={user?.name?.charAt(0)??""} shape="circle" style={{ backgroundColor: 'var(--color-secondary)', color: '#ffffff' }} />
             </Link>
           </div>
 
