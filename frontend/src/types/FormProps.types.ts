@@ -1,4 +1,3 @@
-// types/FormProps.types.ts
 import { UseMutationResult } from "@tanstack/react-query";
 import { UseFormRegister, FieldErrors, FieldValues, UseFormWatch, Control, UseFormTrigger, UseFormSetValue } from "react-hook-form";
 

@@ -1,5 +1,5 @@
 import React from "react";
-import CapybaraColor from '../../svgs/capybaraColor.svg';
+import CapybaraColor from '../../svgs/capybaracolor.png';
 
 const RightLogin: React.FC = () => {
     return (

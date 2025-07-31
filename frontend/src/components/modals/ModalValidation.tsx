@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';  
 import { useNavigate } from 'react-router-dom'; 
-import Capymonoculus from '../../svgs/Capymonoculus.svg';  
+import Capymonoculus from '../../svgs/Capymonoculus.png';  
 
 interface ModalValidationProps {  
     isOpen: boolean;  

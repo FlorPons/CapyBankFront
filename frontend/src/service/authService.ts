@@ -18,6 +18,7 @@ export const login = async (credentials: LoginCredentials): Promise<LoginRespons
         id: 1,
         name: 'Capy',
         last_name: 'Bank',
+        email: 'demo@capybank.com',
         sender_account_id: 1,
         account_number: 12345678,
         balanceTotal: 200000,

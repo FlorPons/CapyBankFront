@@ -8,8 +8,8 @@ import { Link } from "react-router-dom";
 import NavbarLeft from "../components/Common/NavbarLeft";
 import Search from "../components/svg/SearchBar.tsx";
 import Bell from "../components/svg/Bell.tsx";
-import CreditCard from "../../src/svgs/CreditCard1.svg";
-import CapyHelp from "../../src/svgs/CapyHelp.svg";
+import CreditCard from "../../src/svgs/CreditCard1.png";
+import CapyHelp from "../../src/svgs/CapyHelp.png";
 import BalanceBox from "../components/BalanceBoxProps.tsx";
 import ModalTransferencia from "../components/modals/ModalTransferencia";
 

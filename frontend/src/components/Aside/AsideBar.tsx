@@ -13,7 +13,7 @@ import { TransferCash } from "../../types/CashMoves.types";
 import CashPlus from "../svg/CashPlus";
 import { Dialog } from "primereact/dialog";   
 import { Link } from 'react-router-dom';  
-import CreditCard from "../../svgs/CreditCard1.svg";
+import CreditCard from "../../svgs/CreditCard1.png";
 import ModalTransferencia from '../modals/ModalTransferencia';
 
 const AsideBar = () => {
