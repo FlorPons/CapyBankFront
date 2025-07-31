@@ -4,7 +4,7 @@ import Bell from "../svg/Bell";
 import Search from "../svg/SearchBar";
 import { Avatar } from "primereact/avatar";
 import { useAuthStore } from "../../store/AuthStore";
-import CapyHelp from '../../svgs/CapyHelp.svg';
+import CapyHelp from '../../svgs/CapyHelp.png';
 import { moveOut, MoveOutForm } from "../../schemas/cashMove.schema"; 
 import { useForm } from "react-hook-form"; 
 import { zodResolver } from "@hookform/resolvers/zod";  
