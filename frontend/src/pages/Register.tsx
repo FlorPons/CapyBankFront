@@ -6,7 +6,7 @@ import { registerSchema, FormDataRegister } from "../schemas/register.schema";
 
 import ModalValidation from "../components/modals/ModalValidation";
 import RightSide from "../components/register/RightSide";
-import Silueta from "frontend/src/svgs/silueta.png";
+import Silueta from "../svgs/silueta.png";
 import PersonalSection from "../components/register/PersonalSection";
 import NacionalitySection from "../components/register/NacionalitySection";
 import PrivateDataSection from "../components/register/PrivateDataSection";
