@@ -1,7 +1,7 @@
 # 🏦 CapyBack - MVP
 
 
-<p aling="center">
+<p align="center">
 <img src="logo.png" height="400" alt="Logo"/>
 </p>
 
@@ -135,3 +135,23 @@ Pago de servicios básicos (Versión 2 - Roadmap).
 - [@Kevin Salinas - BACKEND](https://github.com/ksalinas652)
 - [@Mauro David Lezcano - FRONTEND](https://github.com/Maurolezcano81)
 - [@OrlandoCV - PM](https://github.com/orlando0107)
+
+
+# Mi documento en imágenes  
+
+## Página 1  
+![Página 1](Images\2.svg)  
+## Página 2  
+![Página 2](Images\3.svg)
+## Página 3  
+![Página 3](Images\4.svg)
+## Página 4  
+![Página 4](Images\5.svg)
+## Página 5  
+![Página 5](Images\6.svg)
+## Página 6  
+![Página 6](Images\7.svg)
+## Página 7  
+![Página 7](Images\8.svg)
+## El equipo  
+![Página 7](Images\1.svg)
