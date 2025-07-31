@@ -8,7 +8,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 const AppRouter = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/CapyBankFront">
       <Suspense fallback={<SkeletonLoading />}>
         <Routes>
           {PublicRoutes.map((route) => (
