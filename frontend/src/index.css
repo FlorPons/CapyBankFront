@@ -1,10 +1,16 @@
-@import 'tailwindcss';
-@import 'primereact/resources/themes/lara-light-blue/theme.css' layer(primereact);
+@import "tailwindcss";
+@import 'primereact/resources/themes/lara-light-blue/theme.css';
+@import "primereact/resources/primereact.min.css";
+@import "primeicons/primeicons.css";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
 
 :root{
   --color-primary: #0095BE;
   --color-primary-hover: #00627C;
   --color-secondary: #FF6B6B;
+  --color-secondary-hover: #fca6a6;
   --color-black: #000;
   --color-white: #fff;
   --color-gray: #C4C4C4;

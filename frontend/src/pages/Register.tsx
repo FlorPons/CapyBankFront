@@ -35,7 +35,7 @@ const Register: React.FC = () => {
     return (
         <div className="flex min-h-screen">
             {/* Formulario de register */}
-            <div className="w-full md:w-6/12 bg-white flex items-center justify-center p-8">
+            <div className="w-full md:w-6/12 bg-[var(--color-white)] flex items-center justify-center p-8">
             <form
                 className="w-full max-w-md flex flex-col gap-4"
                 onSubmit={handleSubmit(onSubmit)}
@@ -74,7 +74,7 @@ const Register: React.FC = () => {
             <ModalValidation isOpen={isModalOpen} onClose={() => { setModalOpen(false); navigate("/login"); }} />
             
              {/* Componente de la derecha */}
-            <div className="hidden md:flex md:w-6/12 bg-primary items-center justify-start">
+            <div className="hidden md:flex md:w-6/12 bg-[var(--color-primary)] items-center justify-start">
             <RightSide />
             </div>
         </div>

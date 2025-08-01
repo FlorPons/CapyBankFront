@@ -5,7 +5,7 @@ const RightLogin: React.FC = () => {
     return (
         <div className="relative w-full h-screen flex items-center justify-center overflow-hidden">
             {/* Fondo azul */}
-            <div className="absolute inset-0 w-full h-full bg-primary z-0" style={{ pointerEvents: 'none' }} />
+            <div className="absolute inset-0 w-full h-full bg-[var(--color-primary)] z-0" style={{ pointerEvents: 'none' }} />
             {/* Contenido */}
             <div className="relative z-10 flex flex-col items-center justify-center w-full h-full text-white">
                 <h1 className="stiky md:text-5xl lg:text-7xl font-monserrat w-full text-center">
@@ -15,7 +15,7 @@ const RightLogin: React.FC = () => {
                     Somos un banco dedicado a cambiar la manera en la que ves las finanzas <br/>
                     Accede con la cuenta "demo@capybank.com" y la contraseña "capy123"
                 </h4>
-                <div className="bg-secondary w-[80%] md:w-[80%] lg:w-[50%] aspect-square flex items-center justify-center rounded-full mx-auto">
+                <div className="bg-[var(--color-secondary)] w-[80%] md:w-[80%] lg:w-[50%] aspect-square flex items-center justify-center rounded-full mx-auto">
                     <img
                         src={CapybaraColor}
                         alt="Capybara"

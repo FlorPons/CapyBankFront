@@ -6,7 +6,7 @@ const RightSide: React.FC = () => {
     return (
         <div className="relative w-full h-full flex">
             {/* Fondo azul */}
-            <div className="absolute inset-0 w-full min-h-screen bg-primary z-0" style={{ pointerEvents: 'none' }} />
+            <div className="absolute inset-0 w-full min-h-screen bg-[var(--color-primary)] z-0" style={{ pointerEvents: 'none' }} />
             {/* Contenido alineado arriba, top-0 */}
             <div className="relative z-10 flex flex-col items-center justify-start w-full text-white pt-12 gap-8" >
                 <div className="fixed">
@@ -18,7 +18,7 @@ const RightSide: React.FC = () => {
                             Por normativa del BCRA necesitamos que completes tus datos y que nos compartas un DNI o Pasaporte para poder verificar tu identidad y asignarte una Cuenta bancaria 🤓
                         </span>
                     </h4>
-                    <div className="bg-secondary w-[80%] md:w-[80%] lg:w-[50%] aspect-square flex items-center justify-center rounded-full mx-auto">
+                    <div className="bg-[var(--color-secondary)] w-[80%] md:w-[80%] lg:w-[50%] aspect-square flex items-center justify-center rounded-full mx-auto">
                     <img
                         src={CapybaraColor}
                         alt="Capybara"

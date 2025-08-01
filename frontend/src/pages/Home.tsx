@@ -27,15 +27,16 @@ export default function Home() {
           </p>  
         </div>  
 
-        {/* Imagen y SVG decorativo */}  
+        {/* Imagen decorativa */}  
         <div className="relative w-full h-[550px] mt-12">  
           <img  
-            src="/tarjeta.png"  
+            className="absolute right-3 top-3 -translate-y-24 z-10 max-w-full h-auto mt-6"
+            src={`${import.meta.env.BASE_URL}tarjeta.png`}  
             alt="tarjeta de banco"  
-            className="absolute right-3 top-0 -translate-y-24 z-10 max-w-full h-auto"  
+              
           />  
           <svg  
-            className="absolute right-0 translate-x-10 -translate-y-10 z-0"  
+            className="absolute right-0 translate-x-10 -translate-y-10 z-0 mb-0"  
             width="435"  
             height="492"  
             viewBox="0 0 435 492"  
@@ -47,7 +48,7 @@ export default function Home() {
         </div>  
 
         {/* Sección Estadísticas */}  
-        <div className="bg-[#3D544D3D]/76 flex flex-col md:flex-row justify-around items-center md:items-stretch px-4 md:px-20 py-8 rounded-4xl mt-12 gap-4 md:gap-8">  
+        <div className="bg-[#3D544D3D]/76 flex flex-col md:flex-row justify-around items-center md:items-stretch px-4 md:px-20 py-8 rounded-4xl mt-0 gap-4 md:gap-8">  
           {[  
             { value: '16+', label: 'Años de experiencia' },  
             { value: '250+', label: 'Empresas asociadas' },  
@@ -78,7 +79,11 @@ export default function Home() {
                 </p>  
                 <CreditCard />  
               </div>
-              <p className="text-xl font-extralight">En nuestra app bancaria, tu seguridad es nuestra prioridad. Utilizamos tecnología de encriptación avanzada y autenticación de múltiples factores para proteger tus datos y transacciones. Con nosotros, tu dinero y tu información están siempre seguros.</p>
+              <p className="text-xl font-extralight">En nuestra app bancaria, 
+                tu seguridad es nuestra prioridad. 
+                Utilizamos tecnología de encriptación avanzada y autenticación de múltiples factores 
+                para proteger tus datos y transacciones. 
+                Con nosotros, tu dinero y tu información están siempre seguros.</p>
             </div>
 
                         {/* Producto 2 */}  
@@ -120,7 +125,10 @@ export default function Home() {
             <p className="text-2xl md:text-3xl mt-4">Te bonificamos tu primer tarjeta de débito</p>
           </div>
           {/* Imagen */}
-          <img src="/groupCard.png" alt=""  className="w-full max-w-sm md:max-w-md h-auto"/>
+          <img 
+          src={`${import.meta.env.BASE_URL}groupCard.png`} 
+          alt=""  className="w-full max-w-sm md:max-w-md h-auto"
+          />
           </div>
 
         {/* Sección de clientes */}  
@@ -140,7 +148,7 @@ export default function Home() {
               </p>  
               <div className="flex justify-center items-center gap-2 mt-auto mx-auto">  
                 <img  
-                  src="/GuillermoFrancella.png"  
+                  src={`${import.meta.env.BASE_URL}GuillermoFrancella.png`}  
                   alt="Guillermo Francella"  
                   className="w-12 h-12 rounded-full object-cover"  
                 />  
@@ -161,7 +169,7 @@ export default function Home() {
               </p>  
               <div className="flex justify-center items-center gap-2 mt-auto mx-auto">  
                 <img  
-                  src="/FrancoColapinto.png"  
+                  src={`${import.meta.env.BASE_URL}FrancoColapinto.png`}  
                   alt="Franco Colapinto"  
                   className="w-12 h-12 rounded-full object-cover"  
                 />  
@@ -182,7 +190,7 @@ export default function Home() {
                 </p>
                 <div className="flex justify-center items-center gap-2 mt-auto mx-auto">
                   <img
-                    src="/SantiagoDelMoro.png"
+                    src={`${import.meta.env.BASE_URL}SantiagoDelMoro.png`}
                     alt="Santiago del moro"
                     className="w-12 h-12 rounded-full object-cover"
                   />
@@ -220,7 +228,8 @@ export default function Home() {
             <SimpleCard
               title="¿Mis transacciones son seguras en CapyBank?"
             >
-              En CapyBank, la seguridad es prioridad. Contamos con tecnología de alta gama para proteger todas tus operaciones.
+              En CapyBank, la seguridad es prioridad. 
+              Contamos con tecnología de alta gama para proteger todas tus operaciones.
             </SimpleCard>
           </div>
         </div>

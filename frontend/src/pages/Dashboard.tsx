@@ -6,7 +6,7 @@ import TransactionHistory from "../components/chart/TransactionHistory";
 
 export default function Dashboard() {
   return (
-    <div className="flex min-h-screen bg-white">
+    <div className="flex min-h-screen bg-[var(--color-white)]">
       <NavbarLeft />
       <main className="flex-1 flex flex-col gap-6 p-4 md:p-8 ml-0 lg:ml-[16rem] transition-all duration-300">
                 <section className="w-full overflow-x-auto">

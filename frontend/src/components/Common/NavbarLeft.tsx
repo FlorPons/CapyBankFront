@@ -96,7 +96,7 @@ const NavbarLeft = () => {
         <>
             {/* Botón hamburguesa solo visible en pantallas chicas */}
             <button
-                className="fixed top-4 left-4 z-50 lg:hidden bg-secondary p-2 rounded"
+                className="fixed top-4 left-4 z-50 lg:hidden bg-[var(--color-secondary)] p-2 rounded"
                 onClick={() => setOpen(!open)}
                 aria-label="Abrir menú lateral"
             >
@@ -109,7 +109,7 @@ const NavbarLeft = () => {
 
             <div 
                 className={`
-                    bg-secondary fixed left-0 top-0 min-h-screen h-full 
+                    bg-[var(--color-secondary)] fixed left-0 top-0 min-h-screen h-full 
                     w-[70vw] max-w-xs px-4 py-6 flex flex-col items-start z-40
                     transition-transform duration-300
                     ${open ? "translate-x-0" : "-translate-x-full"}
