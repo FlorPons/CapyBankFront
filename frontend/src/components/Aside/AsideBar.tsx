@@ -79,7 +79,7 @@ const AsideBar = () => {
 
 
     return (
-        <aside className="hidden lg:flex flex-col min-h-screen h-screen w-[14rem] max-w-[14rem] px-4 py-6 items-start z-40 bg-whiteSecondary">
+        <aside className="hidden lg:flex flex-col min-h-screen h-screen w-[14rem] max-w-[14rem] px-4 py-6 items-start z-40 bg-[var(--color-whiteSecondary)]">
 
             <div className="flex items-center gap-4 mb-6">
                 <div className="flex items-center h-fit gap-4">
@@ -149,7 +149,7 @@ const AsideBar = () => {
                             </form>  
                             <div>
                                         <button
-                                            className="p-2 flex items-center justify-center rounded-sm shadow-md mb-2  bg-secondary cursor-pointer"
+                                            className="p-2 flex items-center justify-center rounded-sm shadow-md mb-2  bg-[var(--color-secondary)] cursor-pointer"
                                             onClick={() => setCashInVisible(true)}
                                         >
                                             <CashPlus

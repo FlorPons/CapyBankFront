@@ -57,7 +57,7 @@ const Login: React.FC = () => {
     return (
         <div className="flex min-h-screen">
             {/* Formulario de login */}
-            <div className="w-full md:w-6/12 bg-white flex items-center justify-center p-8">
+            <div className="w-full md:w-6/12 bg-[var(--color-white)] flex items-center justify-center p-8">
                 <form
                     className="w-full max-w-md flex flex-col gap-4"
                     onSubmit={handleSubmit(onSubmit)}
@@ -124,7 +124,7 @@ const Login: React.FC = () => {
                     <button
                         type="submit"
                         // disabled={isPending}
-                        className={`w-full mt-6 px-6 py-3 rounded-lg font-monserrat transition-colors bg-primary text-white hover:bg-primary-dark`}
+                        className={`w-full mt-6 px-6 py-3 rounded-lg font-monserrat transition-colors bg-[var(--color-primary)] text-white hover:bg-primary-dark`}
                         aria-label="Iniciar sesión"
                     >
                         Iniciar sesión
@@ -145,7 +145,7 @@ const Login: React.FC = () => {
             </div>
 
             {/* Componente de la derecha */}
-            <div className="hidden md:flex md:w-6/12 bg-primary items-center justify-center">
+            <div className="hidden md:flex md:w-6/12 bg-[var(--color-primary)] items-center justify-center">
                 <RightLogin />
             </div>
         </div>

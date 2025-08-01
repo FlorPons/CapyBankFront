@@ -78,7 +78,7 @@ const TransactionHistory: React.FC = () => {
             <Button  
                 label="Ver Transferencia"  
                 title="Ver detalles de la transferencia"  
-                className="w-full mt-1 px-1 py-1 bg-primary text-white rounded-lg font-monserrat hover:bg-primary-dark transition-colors text-xs"  
+                className="w-full mt-1 px-1 py-1 bg-[var(--color-primary)] text-white rounded-lg font-monserrat hover:bg-primary-dark transition-colors text-xs"  
                 style={{ height: '1.25rem', fontSize: '0.6rem' }}  
                 onClick={() => alert(`Ver transferencia ${rowData.id}`)}  
                 aria-label={`Ver detalles de la transferencia ${rowData.id}`}   

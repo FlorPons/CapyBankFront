@@ -56,8 +56,8 @@ const Profile: React.FC = () => {
       <Toast ref={toast} />
 
       {/* Fondo */}
-      <div className="absolute top-0 left-0 w-1/2 h-full bg-primary pointer-events-none" />
-      <div className="absolute top-0 right-0 w-1/2 h-full bg-secondary pointer-events-none" />
+      <div className="absolute top-0 left-0 w-1/2 h-full bg-[var(--color-primary)] pointer-events-none" />
+      <div className="absolute top-0 right-0 w-1/2 h-full bg-[var(--color-secondary)] pointer-events-none" />
 
       <div className="absolute top-6 left-1/2 transform -translate-x-1/2 z-10">
         <img
@@ -75,7 +75,7 @@ const Profile: React.FC = () => {
           Estás en modo demo: los datos se guardan solo durante esta sesión.
         </div>
 
-        <div className="bg-white shadow-md rounded-lg p-6 w-full max-w-md text-black">
+        <div className="bg-[var(--color-white)] shadow-md rounded-lg p-6 w-full max-w-md text-black">
           <form onSubmit={handleSubmit(onSubmit)}>
             <PersonalSection register={register} errors={errors} control={control} />
             <button
